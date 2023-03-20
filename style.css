@@ -63,6 +63,8 @@ header {
 header h1 {
     font-family: var(--ff-heading);
     font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.5rem;
 }
 
 header .logo {
@@ -82,8 +84,10 @@ header p {
 
 form {
     background-color: #ffffff;
-    margin-top: 3.2rem;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 39.2rem;
+
+    padding: 3.1rem 6.4rem 0;
 
     display: flex;
     flex-direction: column;
@@ -92,7 +96,7 @@ form {
 
 div .tittle {
     background: var(--cc-button);
-
+    margin-top: 3.2rem;
     height: 133px;
 
     display: flex;
@@ -113,4 +117,307 @@ div .tittle {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3.4rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset legend {
+    font-family: var(--ff-heading);
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    text-align: center;
+    
+    color: var(--cc-header);
+    border-bottom: 1px solid #E6E6F0 ;
+
+    padding-bottom: 1.0rem;
+    margin-bottom: 15px;
+}
+
+.input-wrapper label, .checkbox-wrapper label {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    margin-bottom: .8rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label span {
+    color: #C1BCCC;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+    margin-left: 6px;
+}
+
+.input-wrapper label span:hover{
+    color: #6c6a71;
+}
+
+.input-wrapper input, .input-wrapper select, .input-wrapper textarea {
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    height: 5.5rem;
+
+    padding: 5px 15px;
+
+    color: #6c6a71c9;
+}
+
+fieldset .col-2 {
+    display: flex;
+    gap: 22px ;
+    
+}
+
+.col-2 div{
+    width: 100%;
+} 
+
+textarea {
+    resize: none;
+    
+}
+
+.input-wrapper textarea {
+    height: 16.6rem;
+}
+
+.checkbox-wrapper  {
+    position: relative;
+}
+.checkbox-wrapper label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 8px;
+
+}
+
+.checkbox-wrapper input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+
+    opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    height: 24px;
+    width: 24px;
+
+    display: block;
+
+    border: 1px solid #e6e6f0;
+    border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1596_20)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1596_20'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    
+    filter: saturate(0);
+    
+}
+
+.checkbox-wrapper input:focus + label::before{
+    outline: 2px solid black;
+}
+
+.col-3 {
+    display: flex;
+    gap: 10px;
+}
+
+.col-3 :nth-child(1) {
+    width: 100%;
+    padding-right: 22px;
+}
+
+.button {
+    height: 5.1rem;
+    width: 62.2rem;
+    border-radius: 8px;
+    background-color: #F67669;
+    color: white;
+    border: none;
+    margin: 6.4rem auto;
+    font-family: var(--ff-heading);
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+    padding: 12px auto;
+}
+
+.button:hover {
+    animation: scaler 700ms forwards;
+    cursor: pointer;
+}
+/*
+input:invalid {
+     border: 1px solid red;
+     opacity: 0.5;
+     animation: flashing 2s both;
+ }
+*/
+
+header {
+    animation: top-to-down 700ms 150ms backwards;
+}
+
+.tittle {
+    animation: left-to-right 700ms 200ms backwards;
+}
+
+form {
+    animation: right-to-left 700ms 250ms backwards;
+}
+
+legend {
+    animation: top-to-down 700ms 650ms backwards;
+}
+
+label {
+    animation: top-to-down 700ms 350ms backwards;
+}
+
+input {
+    animation: top-to-down 700ms 650ms backwards;
+}
+
+select {
+    animation: top-to-down 700ms 650ms backwards;
+}
+
+textarea {
+    animation: top-to-down 700ms 700ms backwards;
+}
+
+.button {
+    animation: opacity-only 700ms 800ms backwards;
+}
+
+.checkbox-wrapper {
+    animation: left-to-right 700ms 800ms backwards;
+}
+
+body {
+    animation: opacity-only 700ms 10ms backwards
+}
+
+@keyframes top-to-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+@keyframes down-to-top {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
+@keyframes opacity-only {
+    0% {
+        opacity: 0;
+        
+    }
+
+    100% {
+        opacity: 1;
+        
+    }
+ }
+ @keyframes left-to-right {
+    0% {
+        opacity: 0;
+        transform: translateX(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+ @keyframes right-to-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+ }
+
+@keyframes scaler {
+    0% {
+        transform: scale(1);
+        filter: saturate(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        filter: saturate(1.1);        
+    }
+
+}
+
+@keyframes flashing {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 100;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 100;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90%{
+        opacity: 100;
+    }
+    
 }

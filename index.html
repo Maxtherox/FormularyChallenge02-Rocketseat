@@ -22,26 +22,30 @@
             
         </header>
         
-
         
-        <form action="">
-            <div class="tittle"> 
-                <h1>Avalie sua Mentoria</h1>
-            </div>
+        <div class="tittle"> 
+            <h1>Avalie sua Mentoria</h1>
+           
+         </div>
+        <form id="my-form" action="">
+      
             
             <fieldset>
-               ≈
+               
                 <div class="fieldset-wrapper">
-                <div class="input-wrapper">
-                    <label for="user-name">Nome</label>
-                    <input type="text" name="user-name" id="user-name">
+                
+                <div class="col-2">
+                    <div class="input-wrapper">
+                        <label for="user-name">Nome</label>
+                        <input type="text" name="user-name" id="user-name">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="user-last-name">Sobrenome</label>
+                        <input type="text" name="user-last-name" id="user-last-name">
+                    </div>
                 </div>
                 <div class="input-wrapper">
-                    <label for="user-last-name">Nome</label>
-                    <input type="text" name="user-last-name" id="user-last-name">
-                </div>
-                <div class="input-wrapper">
-                    <label for="user-email">E-mail <span>Digite um e-mail válido</span></label>
+                    <label for="user-email">E-mail <span>(Digite um e-mail válido)</span></label>
                     <input type="email" name="user-email" id="user-email" required>
                 </div>
                 </div>
@@ -61,9 +65,9 @@
                 </div>
                 <div class="input-wrapper">
                     <label for="feedback-mentor">Deixe um feedback sobre o mentor</label>
-                    <textarea name="feedback-mentor" id="feedback-mentor" cols="30" rows="10"></textarea>
+                    <textarea name="feedback-mentor" id="feedback-mentor" cols="30" rows="10" ></textarea>
                 </div>
-                <div class="input-wrapper">
+                <div class="checkbox-wrapper">
                     <input type="checkbox" name="user-checkbox" id="user-checkbox">
                     <label for="user-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
                 </div>
@@ -73,20 +77,24 @@
             <fieldset>
                 <div class="fieldset-wrapper">
                     <legend>Agendando próxima mentoria</legend>
-                <div class="input-wrapper">
-                    <label for="user-date">Data <span>DD/MM/AA</span></label>
-                    <input type="date" name="user-date" id="user-date">
+                
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="user-date">Data <span>(DD/MM/AA)</span></label>
+                        <input type="date" name="user-date" id="user-date">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="begin-time">Das</label>
+                        <input type="time" name="begin-time" id="begin-time">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="end-time">Até</label>
+                        <input type="time" name="end-time" id="end-time" required>
+                    </div>
                 </div>
-                <div class="input-wrapper">
-                    <label for="begin-time">Das</label>
-                    <input type="time" name="begin-time" id="begin-time">
+               
                 </div>
-                <div class="input-wrapper">
-                    <label for="end-time">Até</label>
-                    <input type="time" name="end-time" id="end-time" required>
-                </div>
-                </div>
-                <button>Enviar</button>
+                <input class="button" type="submit" form="my-form" value="Salvar ">
             </fieldset>
         </form>
     </div>
