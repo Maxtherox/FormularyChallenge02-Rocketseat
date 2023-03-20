@@ -8,4 +8,4 @@ Por fim, aqui uma print de como ficou a pagina, e caso queira vizualizar deixare
 
 [Avaliar Mentoria](https://maxtherox.github.io/FormularyChallenge02-Rocketeat/)
 
-![](https://i.imgur.com/H4mFeC0.png)
+<img title="" src="https://i.imgur.com/H4mFeC0.png" alt="" data-align="center">
