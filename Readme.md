@@ -6,7 +6,7 @@ Neste desafio foi colocado em pratica tudo ensinado no Stage 03 sobre formulári
 
 Por fim, aqui uma print de como ficou a pagina, e caso queira vizualizar deixarei o link abaixo também.
 
-[Avaliar Mentoria](https://maxtherox.github.io/FormularyChallenge02-Rocketeat/)
+[Avaliar Mentoria](https://maxtherox.github.io/FormularyChallenge02-Rocketseat/)
 
 <img title="" src="https://i.imgur.com/H4mFeC0.png" alt="" data-align="center">
 
