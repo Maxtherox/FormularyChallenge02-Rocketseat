@@ -270,8 +270,10 @@ textarea {
 }
 
 .button:hover {
-    animation: scaler 700ms forwards;
+    transform: scale(1.1);
     cursor: pointer;
+    
+    transition-duration: 700ms;
 }
 /*
 input:invalid {
@@ -385,12 +387,12 @@ body {
 @keyframes scaler {
     0% {
         transform: scale(1);
-        filter: saturate(1);
+        
     }
 
     100% {
         transform: scale(1.1);
-        filter: saturate(1.1);        
+             
     }
 
 }
