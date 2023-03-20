@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    
+}
+
+:root {
+    --ff-body: 'Poppins', sans-serif;
+    --ff-heading: 'Staatliches', cursive;
+
+
+    --hue: 250;
+
+    --cc-header: hsla(var(--hue), 23%, 21%, 1);
+    --cc-bg: hsla(var(--hue), 41%, 82%, 1);
+    --cc-button: #F67669;
+
+    font-size: 62.5%;
+
+    --fs-body: 1.4rem;
+    --fs-heading: 2.4rem;
+}
+
+body, input, select {
+    font-family: var(--ff-body);
+    font-size: 1.4rem;
+    
+
+}
+
+body {
+    background-color: #BFD7E4;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 46.5rem;
+    background-color: var(--cc-header);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.page {
+    width: 75.0rem;
+    margin: 0 auto;
+
+}
+
+header {
+    width: 39.1rem;
+    margin: 10.7rem auto 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+}
+
+header h1 {
+    font-family: var(--ff-heading);
+    font-size: 3.6rem;
+}
+
+header .logo {
+
+    width: 22.5rem;
+    height: 10.0rem;
+    margin: 2.4rem auto 0;
+
+}
+
+header p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: var(--ff-body);
+}
+
+form {
+    background-color: #ffffff;
+    margin-top: 3.2rem;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.1rem;
+}
+
+div .tittle {
+    background: var(--cc-button);
+
+    height: 133px;
+
+    display: flex;
+    flex: column;
+
+    border-radius: 20px 20px 0 0;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #ffffff;
+}
+
+.tittle h1 {
+    align-items: center;
+    margin: auto;
+    font-family: var(--ff-heading);
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+}
